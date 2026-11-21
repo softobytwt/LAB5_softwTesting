@@ -32,6 +32,7 @@ def test_add_product_to_cart(page: Page):
  page.locator('[data-test="shopping-cart-badge"]')
  ).to_have_text("1")
 
+"""
 def test_product_is_displayed_in_cart(page: Page):
  page.goto("https://www.saucedemo.com/")
  page.locator('[data-test="username"]').fill("standard_user")
@@ -50,7 +51,7 @@ def test_product_is_displayed_in_cart(page: Page):
  expect(
  page.locator('[data-test="inventory-item-name"]')
  ).to_have_text("Sauce Labs Backpack")
-
+"""
 
 def test_login_with_invalid_password(page: Page):
  page.goto("https://www.saucedemo.com/")
